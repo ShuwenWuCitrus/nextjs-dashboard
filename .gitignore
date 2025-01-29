@@ -33,3 +33,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 确保这些文件被忽略
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.sentry-build-plugin
+
+# 其他常见需要忽略的文件
+node_modules/
+.next/
+*.log
