@@ -1,30 +1,32 @@
 # Issue Tracker
 
-A modern issue tracking application built with Next.js 14, featuring real-time updates, user authentication, and a clean, responsive interface.
+A modern issue tracking application built with Next.js 14, featuring server-side rendering, user authentication, and a responsive interface.
 
 ## Features
 
-- 📝 Create, edit, and delete issues
-- 👥 User authentication with Google
-- 📊 Dashboard with issue statistics and charts
-- 🔍 Filter issues by status (Open, In Progress, Closed)
-- 📱 Responsive design for all devices
-- 👤 Assign issues to users
-- 📝 Rich text editing with Markdown support
-- ⚡ Real-time updates with React Query
-- 🎨 Modern UI with Radix UI and Tailwind CSS
+- Create, edit, and delete issues with real-time validation
+- User authentication with Google OAuth
+- Dashboard with issue statistics and status visualization
+- Filter and manage issues by status (Open, In Progress, Closed)
+- Responsive design optimized for all devices
+- Issue assignment and user management
+- Rich text descriptions with Markdown support
 
 ## Tech Stack
 
-- **Framework:** Next.js 14
-- **Database:** MySQL with Prisma ORM
-- **Authentication:** NextAuth.js with Google provider
-- **Styling:** Tailwind CSS + Radix UI
-- **Charts:** Recharts
-- **Forms:** React Hook Form + Zod validation
-- **API:** REST API with Next.js API routes
-- **State Management:** React Query
-- **Markdown:** React Markdown + SimpleMDE editor
+### Frontend
+
+- Next.js 14 with App Router and Server Components
+- TypeScript for type safety
+- Radix UI components with Tailwind CSS
+- Server-side rendering for optimal performance
+
+### Backend
+
+- MySQL database with Prisma ORM
+- NextAuth.js for authentication
+- RESTful API endpoints
+- Secure data validation with Zod
 
 ## Getting Started
 
@@ -71,6 +73,15 @@ npx prisma migrate dev
 ```bash
 npm run dev
 ```
+
+## Architecture Highlights
+
+- Server Components for efficient data fetching and rendering
+- Type-safe database operations with Prisma ORM
+- Secure authentication flow with NextAuth.js
+- Modular component architecture for maintainability
+- Responsive UI built with Radix UI primitives
+- Form validation using Zod schema validation
 
 ## Database Schema
 
